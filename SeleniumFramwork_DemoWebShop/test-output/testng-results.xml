@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
+  <reporter-output>
+    <line>
+      <![CDATA[---Executing Before Suite---]]>
+    </line>
+    <line>
+      <![CDATA[---Execution initiated---]]>
+    </line>
+    <line>
+      <![CDATA[---Executing Before Suite---]]>
+    </line>
+    <line>
+      <![CDATA[---Executing Before Suite---]]>
+    </line>
+    <line>
+      <![CDATA[---Test Method Execution Started---]]>
+    </line>
+    <line>
+      <![CDATA[---Test Method Execution Skipped---]]>
+    </line>
+    <line>
+      <![CDATA[---Executing After Suite---]]>
+    </line>
+    <line>
+      <![CDATA[ Execution terminated---]]>
+    </line>
+    <line>
+      <![CDATA[---Executing After Suite---]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2026-10-28T14:14:05 IST" name="Default suite" finished-at="2026-10-28T14:14:05 IST" duration-ms="107">
+    <groups>
+      <group name="Regression">
+        <method signature="LoginTest1.loginAsValidUser()[pri:0, instance:Com.demoWebShop.login.LoginTest1@367ffa75]" name="loginAsValidUser" class="Com.demoWebShop.login.LoginTest1"/>
+      </group> <!-- Regression -->
+      <group name="Smoke">
+        <method signature="LoginTest1.loginAsValidUser()[pri:0, instance:Com.demoWebShop.login.LoginTest1@367ffa75]" name="loginAsValidUser" class="Com.demoWebShop.login.LoginTest1"/>
+      </group> <!-- Smoke -->
+    </groups>
+    <test started-at="2026-10-28T14:14:05 IST" name="Default test" finished-at="2026-10-28T14:14:05 IST" duration-ms="107">
+      <class name="Com.demoWebShop.login.LoginTest1">
+        <test-method is-config="true" signature="configBeforeSuite()[pri:0, instance:Com.demoWebShop.login.LoginTest1@367ffa75]" started-at="2026-10-28T14:14:05 IST" name="configBeforeSuite" finished-at="2026-10-28T14:14:05 IST" duration-ms="29" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[---Executing Before Suite---]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- configBeforeSuite -->
+        <test-method is-config="true" signature="configBeforeTest()[pri:0, instance:Com.demoWebShop.login.LoginTest1@367ffa75]" started-at="2026-10-28T14:14:05 IST" name="configBeforeTest" finished-at="2026-10-28T14:14:05 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[---Executing Before Suite---]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- configBeforeTest -->
+        <test-method is-config="true" signature="configBeforeClass()[pri:0, instance:Com.demoWebShop.login.LoginTest1@367ffa75]" started-at="2026-10-28T14:14:05 IST" name="configBeforeClass" finished-at="2026-10-28T14:14:05 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[---Executing Before Suite---]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- configBeforeClass -->
+        <test-method is-config="true" signature="configBeforeMethod(java.lang.String)[pri:0, instance:Com.demoWebShop.login.LoginTest1@367ffa75]" started-at="2026-10-28T14:14:05 IST" name="configBeforeMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1793177045786" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browser' is required by BeforeMethod on method configBeforeMethod but has not been marked @Optional or defined
+in C:\Users\praja\AppData\Local\Temp\testng-eclipse-616323352\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browser' is required by BeforeMethod on method configBeforeMethod but has not been marked @Optional or defined
+in C:\Users\praja\AppData\Local\Temp\testng-eclipse-616323352\testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:264)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
+at org.testng.internal.Parameters.createParameters(Parameters.java:690)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBeforeMethod -->
+        <test-method signature="loginAsValidUser()[pri:0, instance:Com.demoWebShop.login.LoginTest1@367ffa75]" started-at="2026-10-28T14:14:05 IST" name="loginAsValidUser" finished-at="2026-10-28T14:14:05 IST" duration-ms="0" status="SKIP">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browser' is required by BeforeMethod on method configBeforeMethod but has not been marked @Optional or defined
+in C:\Users\praja\AppData\Local\Temp\testng-eclipse-616323352\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browser' is required by BeforeMethod on method configBeforeMethod but has not been marked @Optional or defined
+in C:\Users\praja\AppData\Local\Temp\testng-eclipse-616323352\testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:264)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
+at org.testng.internal.Parameters.createParameters(Parameters.java:690)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+            <line>
+              <![CDATA[---Test Method Execution Skipped---]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- loginAsValidUser -->
+        <test-method is-config="true" signature="configAfterMethod()[pri:0, instance:Com.demoWebShop.login.LoginTest1@367ffa75]" started-at="2026-10-28T14:14:05 IST" name="configAfterMethod" finished-at="2026-10-28T14:14:05 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAfterMethod -->
+        <test-method is-config="true" signature="configAfterClass()[pri:0, instance:Com.demoWebShop.login.LoginTest1@367ffa75]" started-at="2026-10-28T14:14:05 IST" name="configAfterClass" finished-at="2026-10-28T14:14:05 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAfterClass -->
+        <test-method is-config="true" signature="configAfterTest()[pri:0, instance:Com.demoWebShop.login.LoginTest1@367ffa75]" started-at="2026-10-28T14:14:05 IST" name="configAfterTest" finished-at="2026-10-28T14:14:05 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[---Executing After Suite---]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- configAfterTest -->
+        <test-method is-config="true" signature="configAfterSuite()[pri:0, instance:Com.demoWebShop.login.LoginTest1@367ffa75]" started-at="2026-10-28T14:14:05 IST" name="configAfterSuite" finished-at="2026-10-28T14:14:05 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[---Executing After Suite---]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- configAfterSuite -->
+      </class> <!-- Com.demoWebShop.login.LoginTest1 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
